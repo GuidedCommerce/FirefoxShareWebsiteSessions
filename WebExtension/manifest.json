@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Share Website Sessions",
+  "version": "1.0",
+  "description": "Allows you to share already signed into website sessions with your friends or your other devices via email, chat, or Firefox's Synced Tabs functionality.",
+  "homepage_url": "https://github.com/GuidedCommerce/FirefoxSyncLoggedInTabs",
+  "icons": {
+    "48": "icons/browser-48.png"
+  },
+
+  "permissions": [
+    "alarms",
+    "cookies",
+    "<all_urls>",
+    "webNavigation",
+    "browsingData",
+    "tabs"
+  ],
+
+  "page_action": {
+    "default_icon": "icons/browser-32.png",
+    "default_title": "Share Website Sessions"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+ "applications": {
+     "gecko": {
+          "id": "guidedcommerce@gmail.com"
+     }
+  }
+
+
+}
